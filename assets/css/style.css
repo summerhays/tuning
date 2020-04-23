@@ -1,0 +1,41 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+.moving-text {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    }
+
+.glow {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60000, 0 0 40px #e60000, 0 0 50px #e60000, 0 0 60px #e60000, 0 0 70px #e60000;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #660033, 0 0 40px #660033, 0 0 50px #660033, 0 0 60px #660033, 0 0 70px #660033, 0 0 80px #660033;
+  }
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/piano2_gris.png");
+  min-height: 100%;
+  background-repeat: no-repeat;
+/*  background-attachment: fixed; */
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
