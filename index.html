@@ -1,9 +1,10 @@
 ---
 lang: fr
+title: Piano Summerhays
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang }}">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
@@ -13,6 +14,25 @@ lang: fr
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/Raleway">
   <link rel="icon" type="image/jpg" href="assets/images/logo250.png">
+  <!-- Normal meta -->
+  <meta name="description" content="{% if page.type == "posts" %}{{ post.excerpt }}{% elsif page.description %}{{ page.description }}{% elsif site.title %}{{ site.title }}{% else %}{{ page.translationID }}{% endif %}">
+  <meta name="keywords" content="{{ site.keywords}}">
+  <meta name="author" content="{{ site.title}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#01579B">
+
+    <!-- Facebook & Twitter's opengraph headers -->
+  <meta property="og:title" content='{% if page.og-title %}{{ page.og-title }}{% else %}{{ page.title }}{% endif %}'>
+  <meta property="article:publisher" content="{{ site.url }}">
+  {% if page.tag %}<meta property="article:tag" content="{{ page.tags }}">{% endif %}
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="fb:app_id" content="299421778303061">
+  <meta property="og:site_name" content='{{ site.title }}'>
+  <meta property="og:description" content='{% if page.og-title %}{{ page.og-title }}{% elsif page.title %}{{ page.title }}{% elsif site.title %}{{ site.title }}{% else %}{{ page.translationID }}{% endif %}'>
+  <meta property="og:image" content="{{ site.url }}/assets/images/quaker_icon.png" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:type" content="{% if page.layout == "post" %}article{% else %}website{% endif %}">
+  <meta property="og:locale" content="{% if fr %}fr{% else %}en{% endif %}_CA">
 <!---
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">

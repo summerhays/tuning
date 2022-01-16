@@ -1,0 +1,55 @@
+en:
+  - title: ABOUT
+    href: "#about"
+  - title: " MY WORK"
+    icon: fa fa-th
+    href: "#work"
+  - title: " PRICING"
+    href: "#pricing"
+    icon: fas fa-dollar-sign
+  - title: " CONTACT"
+    href: "#contact"
+    icon: fa fa-envelope
+  - title: FRANÇAIS
+    href: "/"
+    icon: fas fa-random
+
+fr:
+  - title: À PROPOS
+    href: "#about"
+  - title: " NOTRE TRAVAIL"
+    icon: fa fa-th
+    href: "#work"
+  - title: " TARIFS"
+    href: "#pricing"
+    icon: fas fa-dollar-sign
+  - title: " CONTACT"
+    href: "#contact"
+    icon: fa fa-envelope
+  - title: English
+    href: "/home"
+    icon: fas fa-random
+
+about-fr:
+  -
+about-en:
+
+form-fr:
+  - field: Nom
+    placeholder: Name
+  - field: Courriel
+    placeholder: Email
+  - field: Objet
+    placeholder: Subject
+  - field: Message
+    placeholder: Message
+
+form-en:
+  - field: Name
+    placeholder: Name
+  - field: E-mail
+    placeholder: Email
+  - field: Subject
+    placeholder: Subject
+  - field: Message
+    placeholder: Message
